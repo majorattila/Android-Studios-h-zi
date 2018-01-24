@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tabletop"
+    tools:context="com.example.diak.ittapirosholapiros.Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#d4818891"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAlignment="textEnd"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/textView_nyeremeny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="1000"
+                android:textColor="#ffffff"
+                android:textSize="12pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text=" Ft"
+                android:textColor="#ffffff"
+                android:textSize="12pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        android:layout_below="@+id/statusBar"
+
+        <Button
+            android:id="@+id/btn_card_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/hatlap" />
+
+        <Button
+            android:id="@+id/btn_card_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/hatlap" />
+
+        <Button
+            android:id="@+id/btn_card_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/hatlap" />
+    </LinearLayout>
+
+</RelativeLayout>
+

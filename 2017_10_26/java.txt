@@ -1,0 +1,142 @@
+package com.example.diak.szamkitalalo;
+
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Random;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button buttonPlus1, buttonPlus10, buttonMinus1, buttonMinus10, buttonTippel;
+    private TextView textViewErtek;
+
+    private int ertek;
+    private int gondoltSzam;
+
+    private AlertDialog.Builder szeretneUjJatekot;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Init();
+        ujJatek();
+
+    }
+
+
+    private void ujJatek(){
+        Random rnd = new Random();
+        gondoltSzam = rnd.nextInt(101);
+
+        Toast.makeText(getApplicationContext(),
+                gondoltSzam + "",
+                Toast.LENGTH_LONG).show();
+
+        this.ertek = 50;
+        this.textViewErtek.setText(ertek + "");
+
+    }
+
+    private void Init(){
+        this.buttonMinus1 = (Button)findViewById(R.id.buttonMinus);
+        this.buttonMinus10 = (Button)findViewById(R.id.buttonMinus10);
+        this.buttonPlus1 = (Button)findViewById(R.id.buttonPlus);
+        this.buttonPlus10 = (Button)findViewById(R.id.buttonPlus10);
+        this.buttonTippel = (Button)findViewById(R.id.buttonTippel);
+
+        this.textViewErtek = (TextView)findViewById(R.id.textViewSzam);
+
+        this.buttonMinus1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClick(v,-1);
+            }
+        });
+
+        this.buttonMinus10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClick(v,-10);
+            }
+        });
+
+        this.buttonPlus1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClick(v,1);
+            }
+        });
+
+        this.buttonPlus10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClick(v,10);
+            }
+        });
+
+        this.buttonTippel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                eltaltaE();
+            }
+        });
+
+        this.szeretneUjJatekot = new AlertDialog.Builder(MainActivity.this);
+        this.szeretneUjJatekot.setMessage("Szeretnél még egyet játszani?");
+        this.szeretneUjJatekot.setNegativeButton("Igen", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                ujJatek();
+            }
+        });
+        this.szeretneUjJatekot.setPositiveButton("Igen", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        this.szeretneUjJatekot.setCancelable(false);
+        this.szeretneUjJatekot.create();
+    }
+
+    private boolean eltaltaE(){
+        if (gondoltSzam < ertek){
+            Toast.makeText(getApplicationContext(),
+                    "Kisebb számra gondoltam!",
+                    Toast.LENGTH_SHORT).show();
+        }else if (gondoltSzam > ertek){
+            Toast.makeText(getApplicationContext(),
+                    "Nagyobb számra gondoltam!",
+                    Toast.LENGTH_SHORT).show();
+        }else{ //talalat van!!!
+            return true;
+        }
+        return false;
+    }
+
+
+    public void buttonOnClick(View v, int i){
+        int lehetsegesErtek = ertek + i;
+        if (lehetsegesErtek < 0){
+            Toast.makeText(getApplicationContext(),
+                    "Az érték nem lehet kisebb mint 0",
+                    Toast.LENGTH_SHORT).show();
+        }else if (lehetsegesErtek > 100){
+            Toast.makeText(getApplicationContext(),
+                    "Az érték nem lehet nagyobb mint 100",
+                    Toast.LENGTH_SHORT).show();
+        }else{
+            ertek = lehetsegesErtek;
+        }
+        textViewErtek.setText(ertek+"");
+    }
+
+}

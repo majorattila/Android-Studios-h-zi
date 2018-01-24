@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Itt  piros, hol a piros?</string>
+    <string name="text_start">Játék indítása</string>
+    <string name="text_settings">Beállítások</string>
+    <string name="text_info">Információ</string>
+    <string name="ver">Verzió: 2.0\nKészítette Major Attila 14P\nMinden jog fenntartva</string>
+    <string name="easy">Könnyű</string>
+    <string name="medium">Közepes</string>
+    <string name="hard">Nehéz</string>
+</resources>

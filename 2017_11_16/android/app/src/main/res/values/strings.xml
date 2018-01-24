@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="elso_activity">First activity</string>
+    <string name="kovetkez_activity">Next activity</string>
+    <string name="mentes">Save</string>
+    <string name="informacio">Information</string>
+    <string name="kilepes">Exit</string>
+    <string name="masodik_activity">Second activity</string>
+    <string name="vissza_a_menube">Back to the menu</string>
+</resources>

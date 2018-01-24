@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.diak.szamkitalalo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="Élet"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutErtek"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonMinus10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackround"
+            android:layout_marginRight="15dp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackround"
+            android:layout_marginRight="15dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/textViewSzam"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="50"
+            android:textSize="14pt"
+            android:textIsSelectable="false"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonbackround"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/buttonPlus10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/buttonbackround"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonTippel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tippel"
+        android:layout_below="@+id/linearLayoutErtek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+    />
+
+</RelativeLayout>

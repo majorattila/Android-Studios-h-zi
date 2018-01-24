@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Where's the red bean?</string>
+    <string name="text_start">Start game</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_info">Information</string>
+    <string name="ver">Version 2.0 Developed by Attila Major 14P \ nAll rights reserved</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+</resources>

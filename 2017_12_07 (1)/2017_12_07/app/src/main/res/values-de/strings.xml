@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">das Hütchenspiel</string>
+    <string name="text_start">Spiel starten</string>
+    <string name="text_settings">Einstellungen</string>
+    <string name="text_info">Informationen</string>
+    <string name="ver">Version 2.0 Entwickelt von Attila Major 14P \ nAlle Rechte vorbehalten</string>
+    <string name="easy">Licht</string>
+    <string name="medium">Mittel</string>
+    <string name="hard">Schwierig</string>
+</resources>

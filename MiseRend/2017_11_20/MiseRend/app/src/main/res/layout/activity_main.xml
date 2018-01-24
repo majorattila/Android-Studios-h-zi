@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.attila.miserend.MainActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/table">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Bejövetel:"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_bejovetel"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_bejovetel"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Kyrie"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_kyrie"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_kyrie"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gloria"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_gloria"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_gloria"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Zsoltár"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_zsoltar"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_zsoltar"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dicsőités"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_dicsoites"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_dicsoites"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Felajánlás"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_felajanlas"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_felajanlas"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sanctus"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_sanctus"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_sanctus"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Agnus Dei"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_agnus_dei"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_agnus_dei"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Áldozás"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_aldozas"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_aldozas"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Kimenetel"
+                android:textSize="7pt"></TextView>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:textSize="7pt"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView_kimenetel"></TextView>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_edit"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_kimenetel"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
